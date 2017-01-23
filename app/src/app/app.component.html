@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+
+<div class="column">
+	<h2>User Utilities</h2>
+	<div class="field" *ngFor="let userUtil of userUtils">
+  		<div class="ui toggle checkbox">
+    		<input type="checkbox" name="{{ userUtil.name }}" tabindex="0" class="hidden">
+    		<label>{{ userUtil.name }}</label>
+  		</div>
+	</div>
+</div>
